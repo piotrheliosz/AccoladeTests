@@ -30,28 +30,27 @@ public class AccoladeScenario {
     @BeforeClass
     public static void setUp() throws IOException, AWTException {
 
-        Browser browserName = Browser.EDGE;
-
-        String baseUrl = "";
+        Browser browserName = Browser.CHROME;
 
         switch (browserName) {
             case FIREFOX:
                 System.setProperty("webdriver.firefox.marionette", "C:\\geckodriver.exe");
                 driver = new FirefoxDriver();
                 Runtime.getRuntime().exec("./handleAuthenticationWindowFirefox.exe");
-                driver.get("https://" + baseUrl);
+                driver.get("https://" + Configuration.getBaseUrl());
                 break;
             case CHROME:
                 System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
                 driver = new ChromeDriver();
-                driver.get("https://*@" + baseUrl);
-                driver.navigate().to("https://" + baseUrl);
+                driver.get("https://" + Configuration.getLogin() + ":" + Configuration.getPassword()
+                        + "@" + Configuration.getBaseUrl());
+                driver.navigate().to("https://" + Configuration.getBaseUrl());
                 break;
             case EDGE:
                 System.setProperty("webdriver.edge.driver", "C:\\MicrosoftWebDriver.exe");
                 driver = new EdgeDriver();
                 Runtime.getRuntime().exec("./handleAuthenticationWindowEdge.exe");
-                driver.get("https://" + baseUrl);
+                driver.get("https://" + Configuration.getBaseUrl());
                 break;
         }
 

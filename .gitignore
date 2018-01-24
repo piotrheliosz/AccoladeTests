@@ -28,3 +28,4 @@ hs_err_pid*
 /handleAuthenticationWindowFirefox.au3
 /handleAuthenticationWindowEdge.exe
 /handleAuthenticationWindowFirefox.exe
+/config.properties
