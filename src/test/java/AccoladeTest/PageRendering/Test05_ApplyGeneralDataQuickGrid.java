@@ -11,6 +11,7 @@ public class Test05_ApplyGeneralDataQuickGrid extends AccoladeScenario {
     @Test
     public void applyGeneralDataQuickGrid() {
 
+        System.out.println(getClass());
         SearchAccoladePage searchAccoladePage = new SearchAccoladePage(driver);
         searchAccoladePage.waitForVisibilityOfElement(searchAccoladePage.searchField, 30);
         searchAccoladePage.findAndOpenProject(projectName);

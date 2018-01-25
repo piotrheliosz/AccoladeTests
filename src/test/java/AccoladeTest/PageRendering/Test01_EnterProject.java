@@ -13,6 +13,7 @@ public class Test01_EnterProject extends AccoladeScenario {
     @Test
     public void enterProject() {
 
+        System.out.println(getClass());
         SearchAccoladePage searchAccoladePage = new SearchAccoladePage(driver);
         searchAccoladePage.waitForVisibilityOfElement(searchAccoladePage.searchField, 30);
 

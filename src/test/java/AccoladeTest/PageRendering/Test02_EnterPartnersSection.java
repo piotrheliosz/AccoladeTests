@@ -14,6 +14,7 @@ public class Test02_EnterPartnersSection extends AccoladeScenario {
     @Test
     public void enterPartnersSection() {
 
+        System.out.println(getClass());
         SearchAccoladePage searchAccoladePage = new SearchAccoladePage(driver);
         searchAccoladePage.waitForVisibilityOfElement(searchAccoladePage.searchField, 30);
         searchAccoladePage.findAndOpenProject(projectName);
