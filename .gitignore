@@ -28,7 +28,7 @@ hs_err_pid*
 /target/
 /AccoladeTests.iml
 /handleAuthenticationWindowFirefox.au3
-/config.properties
 /handleAuthenticationWindowEdge.exe
 /handleAuthenticationWindowFirefox.exe
 /.idea/
+/config.properties

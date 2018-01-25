@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+  <test name="AccoladeTests">
+    <classes>
+      <class name="AccoladeTest.PageRendering.Test01_EnterProject"/>
+      <class name="AccoladeTest.PageRendering.Test02_EnterPartnersSection"/>
+      <class name="AccoladeTest.PageRendering.Test03_ApplyPartnersSection"/>
+      <class name="AccoladeTest.PageRendering.Test04_EnterGeneralDataQuickGrid"/>
+      <class name="AccoladeTest.PageRendering.Test05_ApplyGeneralDataQuickGrid"/>
+    </classes>
+  </test> <!-- AccoladeTests -->
+</suite> <!-- Default Suite -->
