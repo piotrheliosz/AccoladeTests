@@ -3,11 +3,11 @@
 <suite name="Default Suite">
   <test name="AccoladeTests">
     <classes>
-      <class name="AccoladeTest.PageRendering.Test01_EnterProject"/>
-      <class name="AccoladeTest.PageRendering.Test02_EnterPartnersSection"/>
-      <class name="AccoladeTest.PageRendering.Test03_ApplyPartnersSection"/>
-      <class name="AccoladeTest.PageRendering.Test04_EnterGeneralDataQuickGrid"/>
-      <class name="AccoladeTest.PageRendering.Test05_ApplyGeneralDataQuickGrid"/>
+      <class name="PageRendering.Test01_EnterProject"/>
+      <class name="PageRendering.Test02_EnterPartnersSection"/>
+      <class name="PageRendering.Test03_ApplyPartnersSection"/>
+      <class name="PageRendering.Test04_EnterGeneralDataQuickGrid"/>
+      <class name="PageRendering.Test05_ApplyGeneralDataQuickGrid"/>
     </classes>
   </test> <!-- AccoladeTests -->
 </suite> <!-- Default Suite -->
